@@ -1,0 +1,9 @@
+{
+  "silence_timezone_request": true,
+  "format": "%Y-%m-%d %H:%M",
+  "user_prompt_config": [
+    { "name": "Time",
+      "format": "%H:%M",
+    },
+  ],
+}

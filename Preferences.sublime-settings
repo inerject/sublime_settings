@@ -1,0 +1,36 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+  "theme": "Adaptive.sublime-theme",
+  "always_show_minimap_viewport": true,
+  "mini_diff": false,
+
+  "draw_white_space": "all",
+  "font_size": 13,
+
+  "rulers":
+  [
+    80,
+    90,
+  ],
+  "wrap_width": 90,
+  "word_wrap": true,
+
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+
+  "drag_text": false,
+  "ensure_newline_at_eof_on_save": true,
+  "show_encoding": true,
+  "show_line_endings": true,
+  "show_git_status": false,
+
+  "ignored_packages":
+  [
+    "Vintage",
+  ],
+
+// MarkdownEditing
+  "mde.auto_increment_ordered_list_number": false,
+  "index_files": true,
+}

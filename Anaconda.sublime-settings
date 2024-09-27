@@ -1,0 +1,13 @@
+{
+    "auto_python_builder_enabled": false,
+
+    "anaconda_linter_phantoms": true,
+    "anaconda_linting_behaviour": "save-only",
+
+    "pep8_ignore":
+    [
+        "E309",
+        "E501",
+        "W503",
+    ],
+}

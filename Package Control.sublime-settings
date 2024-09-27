@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"Anaconda",
+		"Chain of Command",
+		"Compare Side-By-Side",
+		"Git",
+		"GitGutter",
+		"InsertDate",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"Package Control",
+		"PackageResourceViewer",
+		"PlainTasks",
+		"Pretty JSON",
+		"RawLineEdit",
+		"RemoteSubl",
+		"requirementstxt",
+		"SublimeREPL",
+		"Table Editor",
+		"Terminal",
+		"TOML",
+		"TrailingSpaces",
+	],
+	"in_process_packages":
+	[
+	],
+}

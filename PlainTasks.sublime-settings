@@ -1,0 +1,9 @@
+{
+  "open_tasks_bullet": "❑",
+  "before_tasks_bullet_margin": 0,
+  "color_scheme": "Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme",
+  "show_remain_due": true,
+  "draw_indent_guides": true,
+  "line_numbers": true,
+  "wrap_width": 90,
+}

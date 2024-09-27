@@ -1,0 +1,90 @@
+[
+  // Common
+  { "keys": ["ctrl+alt+p"], "command": "prompt_select_workspace" },
+  { "keys": ["f5"], "command": "refresh_folder_list" }, // overload InsertDT
+  { "keys": ["ctrl+alt+shift+s"], "command": "save_all" },
+  { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+
+  {
+    "keys": ["alt+s"],
+    "command": "chain",
+    "args": {
+      "commands": [
+        ["set_line_ending", {"type": "unix"}], // "unix", "windows"
+        ["save"],
+      ],
+    },
+  },
+  {
+    "keys": ["alt+w"],
+    "command": "chain",
+    "args": {
+      "commands": [
+        ["set_line_ending", {"type": "windows"}], // "unix", "windows"
+        ["save"],
+      ],
+    },
+  },
+  { "keys": ["ctrl+shift+alt+c"], "command": "cancel_build" },
+
+  // Plain Tasks
+  { "keys": ["ctrl+a"], "command": "plain_tasks_archive", "args": {"partial": true},
+    "context": [{ "key": "selector", "operator": "equal", "operand": "text.todo" }]
+  },
+
+  // GitGutter
+  { "keys": ["ctrl+shift+alt+b"], "command": "git_gutter_blame" },
+
+  // Terminal
+  { "keys": ["ctrl+alt+t"], "command": "open_terminal" },
+  { "keys": ["ctrl+alt+shift+t"], "command": "open_terminal_project_folder" },
+  {
+    "keys": ["ctrl+alt+shift+v"],
+    "command": "extended_open_terminal_project_folder",
+    "args": {
+      "terminal": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      // "parameters": [
+      //   "-NoExit", "-File", ".\\venv\\Scripts\\activate",
+      // ],
+    },
+  },
+
+  // Anaconda
+  {
+    "keys": ["ctrl+shift+l"],
+    "command": "anaconda_erase_lint_marks",
+  },
+  // {
+  //   "keys": ["ctrl+shift+e"],
+  //   "command": "anaconda_enable_linting",
+  // },
+
+  // Python to SublimeREPL + venv
+  {
+    "keys": ["ctrl+alt+b"],
+    "command": "proj_repl_open",
+    "args": {
+      "cmd": ["$project_path/venv/Scripts/python", "-u", "$file_basename"],
+      "cwd": "$file_path",
+      "encoding": "utf8",
+      "extend_env": {"PYTHONIOENCODING": "utf-8"},
+      "external_id": "python",
+      "syntax": "Packages/Python/Python.tmLanguage",
+      "type": "subprocess",
+    },
+  },
+  // Python to SublimeREPL + venv + console
+  {
+    "keys": ["ctrl+alt+shift+b"],
+    "command": "proj_repl_open",
+    "args": {
+      "cmd": ["$project_path/venv/Scripts/python", "-i", "-u", "$file_basename"],
+      "cwd": "$file_path",
+      "encoding": "utf8",
+      "extend_env": {"PYTHONIOENCODING": "utf-8"},
+      "external_id": "python",
+      "syntax": "Packages/Python/Python.tmLanguage",
+      "type": "subprocess",
+    },
+  },
+]
